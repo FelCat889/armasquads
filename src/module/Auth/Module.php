@@ -1,7 +1,9 @@
 <?php
 
 namespace Auth;
-
+/*   NICE */
+/*   NICE */
+v
 use Zend\EventManager\EventInterface;
 use ZfcRbac\View\Strategy\RedirectStrategy;
 use ZfcRbac\View\Strategy\UnauthorizedStrategy;
@@ -21,6 +23,7 @@ class Module
         $eventManager->attach($serviceLocator->get(UnauthorizedStrategy::class));
         $eventManager->attach($serviceLocator->get(RedirectStrategy::class));
     }
+/*   NICE */
 
     public function getConfig()
     {
@@ -28,7 +31,11 @@ class Module
         return include __DIR__ . '/config/module.config.php';
     }
 
-    public function getAutoloaderConfig()
+   /*   NICE */
+/*   NICE */
+/*   NICE */
+/*   NICE */
+ public function getAutoloaderConfig()
     {
         return array(
             'Zend\Loader\ClassMapAutoloader' => array(
@@ -42,3 +49,5 @@ class Module
         );
     }
 }
+
+/*        /** @var ServiceManager $serviceLocator */
