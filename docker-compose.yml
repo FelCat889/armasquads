@@ -1,13 +1,13 @@
 version: "3.3"
-
+#OSINT
 services:
   web:
     build:
       context: ./
-    image: armasquads
+    image: armasquads 
     container_name: armasquads_web
     networks:
-      - armasquads
+      - armasquads #OSINT
     ports:
       - "8080:80"
     environment:
@@ -37,6 +37,14 @@ services:
     ports:
       - '127.0.0.1:3306:3306'
     expose:
+
+
+    #OSINT
+#OSINT
+#OSINT
+#OSINT
+#OSINT
+
       - '3306'
     volumes:
       - ./data_mysql:/var/lib/mysql
