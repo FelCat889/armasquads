@@ -49,7 +49,29 @@ $(document).ready(function(){
 
         $('#squad-count-display').show().html(display);
     });
+/*
+// remove member
+function remove_member(obj)
+{
+    $(obj).parent().parent().slideUp(function(){
+        // remove field
+        $(this).remove();
 
+        // current member fields
+        var currentCount = $('.members > .members-collection > div.item').length;
+
+        // update member info
+        $('span.member-count').html(currentCount);
+
+        // show info for empty squad
+        if( currentCount == 0 )
+        {
+            $('.members p.no-member-hint').show();
+        }
+    });
+    return false;
+}
+*/
     // member search box
     $('#memberSearch').bind('keyup', function(){
         var searchTerm = $(this).val();
@@ -79,7 +101,27 @@ $(document).ready(function(){
         $('#member-count-display').show().html(display);
     });
 });
+/*// remove member
+function remove_member(obj)
+{
+    $(obj).parent().parent().slideUp(function(){
+        // remove field
+        $(this).remove();
 
+        // current member fields
+        var currentCount = $('.members > .members-collection > div.item').length;
+
+        // update member info
+        $('span.member-count').html(currentCount);
+
+        // show info for empty squad
+        if( currentCount == 0 )
+        {
+            $('.members p.no-member-hint').show();
+        }
+    });
+    return false;
+}*/
 // add member
 function add_member()
 {
